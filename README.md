@@ -4,7 +4,6 @@ A Modern Compiler Shell Langage Made In Rust
 # Example
 
 in Krystal
-"https://ftp.gnu.org/gnu/hello/hello-2.12.1.tar.gz"
 ```sh
 import std.tmp.generate_tmp;
 import std.sys.mv_to_bin;
