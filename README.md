@@ -27,7 +27,7 @@ in $tmp do {
 }
 ```
 
-will be compiled to 
+will be compiled to (**CMD**: ```krystalc icat.kr --with-std --lang sh```)
 ```sh
 $__0="sys.generate_tmp"
 $__1="sys.mv_to_bin"
@@ -58,6 +58,8 @@ krystal-std $__6 $make $__6_a1
 krystal-std $__1 $__1_a1
 
 cd $__pwd1
+```
+
 
 
 
