@@ -15,14 +15,14 @@ import std.pkg.run;
 
 $tmp = generate_tmp;
 
-(downloadFromGithub "https://github.com/atextor/icat", $tmp);
+downloadFromGithub "https://github.com/atextor/icat", $tmp;
 
-$make = (require (package "make"));
-$imlib2 = (require (package "imlib2"));
-$xorg = (require (framework "xorg"));
+$make = require (package "make");
+$imlib2 = require (package "imlib2");
+$xorg = require (framework "xorg");
 
 in $tmp do {
-  (run $make, [$PWD]);
-  (mv_to_bin icat);
+  run $make, [$PWD];
+  mv_to_bin icat;
 }
 ```
